@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.header--title {
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-input__inner {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 8px 15px;
+}
+.custom-input {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.repositories-wrapper {
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.repository {
+    padding-left: 100px;
+    width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.repository-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.repository-item {
+    margin: 5px;
+    list-style-type: none;
+    padding: 0;
+}
+.paginator {
+    margin: 10px;
+}
+.pageNumber {
+    padding: 3px;
+    border: 1px solid grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pageNumber.selectedPage {
+    font-weight: bold;
+    border-color: black;
+}
+
+.link-repository:hover {
+    color: rgba(42, 33, 173, 0.8);
+}
+
+.link-header {
+    padding-left: 40%;
+    size: 30px;
+}
+.repository-card {
+    width: 50%;
+    padding-left: 100px
 }
